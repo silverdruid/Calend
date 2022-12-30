@@ -1,24 +1,24 @@
-# vue
 
-## Project setup
-```
-npm install
-```
+<h1>Calendar App</h1>
+A simple calendar app that allows users to view and manage their events.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Features
+View events for a specific day, week, or month
+Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Prerequisites
+Node.js and npm
+Installing
+Clone the repository: git clone https://github.com/user/calend.git
+Navigate to the project directory: cd calend
+Install dependencies: npm install
 
-### Lints and fixes files
-```
-npm run lint
-```
+Run the app: npm start
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Built With
+Vue.js - The web framework used
+
+Author:
+
+<h1>Agbor Temitope</h1>
