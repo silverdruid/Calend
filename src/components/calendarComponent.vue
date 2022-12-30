@@ -12,20 +12,26 @@
         </tr>
       </tbody>
     </table>
-    <div>
+
+    <div class=".monthAndYear">
       <button @click="previous">Previous</button>
+
       <span id="monthAndYear">{{ monthAndYear }}</span>
+
       <button @click="next">Next</button>
     </div>
+
     <div>
       <label for="month">Month:</label>
       <select id="month" v-model="selectedMonth">
         <option v-for="(month, index) in months" :value="index" :key="month">{{ month }}</option>
       </select>
+
       <label for="year">Year:</label>
       <select id="year" v-model="selectedYear">
         <option v-for="year in yearOptions" :key="year">{{ year }}</option>
       </select>
+
       <button @click="jump">Jump</button>
     </div>
   </div>
@@ -66,32 +72,13 @@ export default {
     },
 
     getMonthNames() {
-      const lang = this.$el.getAttribute('data-lang')
       const monthDefault = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-      if (lang === "en") {
         return monthDefault
-      } else if (lang === "id") {
-        return ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-      } else if (lang === "fr") {
-        return ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
-      } else {
-        return monthDefault
-      }
+     
      },
     getDayNames() {
-      // const lang = this.$el.getAttribute('data-lang')
       const dayDefault = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
       return dayDefault;
-      // if (lang === "en") {
-      //   return dayDefault
-      // }
-    //  else if (lang === "id") {
-    //     return ["Ming", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"]
-    //   } else if (lang === "fr") {
-    //     return ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"]
-    //   } else {
-    //     return dayDefault
-    //   }
    },
 
     getCalendar(month, year) {
@@ -149,7 +136,7 @@ export default {
 
 
 <style>
-table {
+    table {
       font-family: Arial, sans-serif;
       font-size: 14px;
       border-collapse: collapse;
@@ -180,6 +167,7 @@ table {
       color: black;
       padding: 8px 16px;
       cursor: pointer;
+      outline: none;
       }
       
       button:hover {
@@ -204,5 +192,8 @@ table {
         font-family: Arial, sans-serif;
         font-size: 14px;
         margin-right: 8px;
+      }
+      .monthAndYear{
+        margin: 10px;
       }
 </style>
