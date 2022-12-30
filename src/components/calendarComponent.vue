@@ -73,9 +73,9 @@ export default {
 
     getMonthNames() {
       const monthDefault = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-        return monthDefault
+      return monthDefault;   
+    },
      
-     },
     getDayNames() {
       const dayDefault = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
       return dayDefault;
