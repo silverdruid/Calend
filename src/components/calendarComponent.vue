@@ -14,11 +14,11 @@
     </table>
 
     <div class=".monthAndYear">
-      <button @click="previous">Previous</button>
+      <button @click="previous" class="previous">Previous</button>
 
       <span id="monthAndYear">{{ monthAndYear }}</span>
 
-      <button @click="next">Next</button>
+      <button @click="next" class="next">Next</button>
     </div>
 
     <div>
@@ -136,7 +136,7 @@ export default {
 
 
 <style>
-    table {
+table {
       font-family: Arial, sans-serif;
       font-size: 14px;
       border-collapse: collapse;
@@ -193,7 +193,15 @@ export default {
         font-size: 14px;
         margin-right: 8px;
       }
+      .previous{
+        margin-right: 100px;
+      }
+
+      .next {
+        margin-left: 100px;
+      }
+
       .monthAndYear{
-        margin: 10px;
+        margin-top: 40px;
       }
 </style>
