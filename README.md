@@ -10,15 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 Prerequisites
 Node.js and npm
 Installing
-Clone the repository: git clone https://github.com/user/calend.git
+Clone the repository: git clone https://github.com/silverdruid/calend.git
 Navigate to the project directory: cd calend
 Install dependencies: npm install
 
-Run the app: npm start
+Run the app: npm run serve
 
 Built With
 Vue.js - The web framework used
 
-Author:
-
-<h1>Agbor Temitope</h1>
+Author: <h1>Agbor Temitope</h1>
