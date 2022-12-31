@@ -21,7 +21,7 @@
       <button @click="next" class="next">Next</button>
     </div>
 
-    <div>
+    <div class="mny">
       <label for="month">Month:</label>
       <select id="month" v-model="selectedMonth">
         <option v-for="(month, index) in months" :value="index" :key="month">{{ month }}</option>
@@ -194,14 +194,18 @@ table {
         margin-right: 8px;
       }
       .previous{
-        margin-right: 100px;
+        margin-right: 50px;
       }
 
       .next {
-        margin-left: 100px;
+        margin-left: 50px;
       }
 
       .monthAndYear{
         margin-top: 40px;
+      }
+
+      .mny{
+        margin-top: 25px;
       }
 </style>
